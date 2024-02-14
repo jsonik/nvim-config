@@ -1,10 +1,15 @@
 return {
-  "nvim-lualine/lualine.nvim",
-  config = function()
-    require('lualine').setup({
-      options = {
-        theme = 'dracula'
-      }
-    })
-  end
+	"nvim-lualine/lualine.nvim",
+	config = function()
+		require("lualine").setup({
+			options = {
+				icons_enabled = true,
+				component_separators = "|",
+				section_separators = "",
+			},
+			-- options = {
+			--  theme = 'dracula'
+			--}
+		})
+	end,
 }
